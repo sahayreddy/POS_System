@@ -18,12 +18,12 @@ A robust, full-stack Point of Sale (POS) solution designed for high-performance 
 
 Tech Stack
 
-Frontend: HTML5, CSS3, JavaScript (Modern Responsive Design)
+-Frontend: HTML5, CSS3, JavaScript (Modern Responsive Design)
 
-Backend: PHP 8.x
+-Backend: PHP 8.x
 
-Server: Apache HTTP Server 2.4
+-Server: Apache HTTP Server 2.4
 
-Database: MariaDB / MySQL
+-Database: MariaDB / MySQL
 
-Environment: Windows (Manual Stack Configuration)
+-Environment: Windows (Manual Stack Configuration)

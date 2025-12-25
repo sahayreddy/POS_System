@@ -6,33 +6,33 @@ A high-performance, secure Point of Sale (POS) solution engineered to streamline
 
 Key Achievements
 
-Twelve Table Relational Schema: The system is built on a deeply normalized architecture including tables for Products, Stock Logs, Transaction Items, and Tax Configurations. This ensures 100 percent data integrity and ACID compliance.
+1.Twelve Table Relational Schema: The system is built on a deeply normalized architecture including tables for Products, Stock Logs, Transaction Items, and Tax Configurations. This ensures 100 percent data integrity and ACID compliance.
 
-Enterprise Grade Security: All user accounts are protected via SHA256 hashing. The application uses Prepared Statements for all database interactions to defend against SQL Injection. Access is managed through granular Role-Based Access Control for Admins, Managers, and Cashiers.
+2.Enterprise Grade Security: All user accounts are protected via SHA256 hashing. The application uses Prepared Statements for all database interactions to defend against SQL Injection. Access is managed through granular Role-Based Access Control for Admins, Managers, and Cashiers.
 
-Professional UI/UX: The design utilizes a Slate and Cobalt visual theme featuring Poppins typography and responsive grid layouts optimized for fast-paced retail environments.
+3.Professional UI/UX: The design utilizes a Slate and Cobalt visual theme featuring Poppins typography and responsive grid layouts optimized for fast-paced retail environments.
 
 The System Engine and Business Logic
 
 The system is defined by its ability to handle complex retail rules with zero latency:
 
-Real Time Inventory Synchronization: The application automatically deducts stock levels at the moment of checkout and triggers low-stock alerts when quantities fall below defined thresholds. Every movement is logged in an Audit Trail for loss prevention.
+1.Real Time Inventory Synchronization: The application automatically deducts stock levels at the moment of checkout and triggers low-stock alerts when quantities fall below defined thresholds. Every movement is logged in an Audit Trail for loss prevention.
 
-Intelligent Billing Engine: The software provides automated calculation of multi-tier taxes and dynamic discounts. It generates digital receipts and logs unique transaction hashes while supporting void transaction logic with automatic inventory restoration.
+2.Intelligent Billing Engine: The software provides automated calculation of multi-tier taxes and dynamic discounts. It generates digital receipts and logs unique transaction hashes while supporting void transaction logic with automatic inventory restoration.
 
-Management Portals: The Cashier Interface is optimized for rapid item entry, while the Admin Dashboard provides deep-dive analytics into revenue trends and employee performance.
+3.Management Portals: The Cashier Interface is optimized for rapid item entry, while the Admin Dashboard provides deep-dive analytics into revenue trends and employee performance.
 
 Technical Stack
 
-Backend: PHP 8.x with Manual Environment Configuration.
+1.Backend: PHP 8.x with Manual Environment Configuration.
 
-Database: MariaDB / MySQL with a Master-Slave ready schema.
+2.Database: MariaDB / MySQL with a Master-Slave ready schema.
 
-Security: SHA256 Hashing and Session Hijacking Protection.
+3.Security: SHA256 Hashing and Session Hijacking Protection.
 
-Presentation: Tailwind CSS and Font Awesome.
+4.Presentation: Tailwind CSS and Font Awesome.
 
-Analytics: Chart.js for interactive visualizations.
+5.Analytics: Chart.js for interactive visualizations.
 
 Getting Started
 

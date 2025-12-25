@@ -1,29 +1,61 @@
 # POS_System
 
- Advanced POS System
+Advanced Full-Stack POS System
 
-A robust, full-stack Point of Sale (POS) solution designed for high-performance retail environments. This system provides a seamless interface for managing transactions, inventory, and sales analytics.
+A high-performance, secure Point of Sale (POS) solution engineered to streamline retail operations, automate inventory management, and provide deep sales insights. This project serves as a comprehensive demonstration of Relational Database Management (RDBMS), Real-time Inventory Synchronization, and Secure PHP Engineering.
 
- Key Features
+Key Achievements
 
-  1.Real-time Transaction Processing: Rapid checkout flow with support for barcode scanning.
+Twelve Table Relational Schema: The system is built on a deeply normalized architecture including tables for Products, Stock Logs, Transaction Items, and Tax Configurations. This ensures 100 percent data integrity and ACID compliance.
 
-  2.Inventory Management: Automated stock tracking with low-inventory alerts.
+Enterprise Grade Security: All user accounts are protected via SHA256 hashing. The application uses Prepared Statements for all database interactions to defend against SQL Injection. Access is managed through granular Role-Based Access Control for Admins, Managers, and Cashiers.
 
-  3.Sales Analytics: Dynamic dashboards to visualize daily, weekly, and monthly revenue.
+Professional UI/UX: The design utilizes a Slate and Cobalt visual theme featuring Poppins typography and responsive grid layouts optimized for fast-paced retail environments.
 
-  4.Secure Authentication: Multi-level user access (Admin, Cashier, Manager).
+The System Engine and Business Logic
 
-  5.Digital Receipts: Automated receipt generation and transaction logging.
+The system is defined by its ability to handle complex retail rules with zero latency:
 
-Tech Stack
+Real Time Inventory Synchronization: The application automatically deducts stock levels at the moment of checkout and triggers low-stock alerts when quantities fall below defined thresholds. Every movement is logged in an Audit Trail for loss prevention.
 
--Frontend: HTML5, CSS3, JavaScript (Modern Responsive Design)
+Intelligent Billing Engine: The software provides automated calculation of multi-tier taxes and dynamic discounts. It generates digital receipts and logs unique transaction hashes while supporting void transaction logic with automatic inventory restoration.
 
--Backend: PHP 8.x
+Management Portals: The Cashier Interface is optimized for rapid item entry, while the Admin Dashboard provides deep-dive analytics into revenue trends and employee performance.
 
--Server: Apache HTTP Server 2.4
+Technical Stack
 
--Database: MariaDB / MySQL
+Backend: PHP 8.x with Manual Environment Configuration.
 
--Environment: Windows (Manual Stack Configuration)
+Database: MariaDB / MySQL with a Master-Slave ready schema.
+
+Security: SHA256 Hashing and Session Hijacking Protection.
+
+Presentation: Tailwind CSS and Font Awesome.
+
+Analytics: Chart.js for interactive visualizations.
+
+Getting Started
+
+1. Prerequisites
+
+You must have Apache 2.4 configured with the PHP Module, MariaDB 10.x, and PHP 8.x Thread Safe installed on your system.
+
+2. Manual Installation
+
+Clone the repository into your htdocs folder:
+git clone https://www.google.com/search?q=https://github.com/yourusername/advanced-pos-system.git
+
+Configure your httpd.conf to link the environment:
+LoadModule php_module "C:/WebDev/php/php8apache2_4.dll"
+PHPIniDir "C:/WebDev/php"
+
+Create the database named pos_db and import the schema.sql file.
+
+3. Test Credentials
+
+The Admin URL is located at http://localhost:8888/pos_system/login.php.
+Use the email admin@pos-tech.com with the password POSManager#2025.
+
+Sales Analytics
+
+The system tracks high-moving items and peak sales hours using Chart.js. This allows managers to optimize staffing and inventory procurement based on historical data.
